@@ -45,13 +45,7 @@ public class TicTacToeGame {
     }
 
     public boolean makeMove(int row, int col, PieceType pieceType) {
-
-        PieceType piece= board.getPiece(row, col);
-        if (piece == piece.EMPTY) {
-            board.addPiece(row, col, pieceType);
-            return true;
-        }
-        return false;
+        return board.addPiece(row, col, pieceType);
     }
 
     public boolean isGameOver() {

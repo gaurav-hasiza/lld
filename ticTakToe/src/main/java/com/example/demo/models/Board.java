@@ -20,6 +20,7 @@ public class Board {
     }
 
     public PieceType getPiece(int i, int j){
+
         return this.playingPieces[i][j].getPieceType();
     }
     public boolean addPiece(int i, int j, PieceType playingPiece){
