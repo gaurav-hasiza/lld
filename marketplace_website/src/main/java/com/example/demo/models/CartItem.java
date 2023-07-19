@@ -1,5 +1,8 @@
 package com.example.demo.models;
 
+import lombok.Getter;
+
+@Getter
 public class CartItem {
     private String productId;
     private String name;
@@ -17,24 +20,5 @@ public class CartItem {
         this.quantity = quantity;
     }
 
-    public String getProductId() {
-        return this.productId;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public String getDescription() {
-        return this.description;
-    }
-
-    public double getPrice() {
-        return this.price;
-    }
-
-    public int getQuantity() {
-        return this.quantity;
-    }
 }
 

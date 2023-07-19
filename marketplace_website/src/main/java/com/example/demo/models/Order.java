@@ -1,7 +1,10 @@
 package com.example.demo.models;
 
+import lombok.Getter;
+
 import java.util.Date;
 
+@Getter
 public class Order {
     private String orderId;
     private String userId;
@@ -19,23 +22,4 @@ public class Order {
         this.orderStatus = orderStatus;
     }
 
-    public String getOrderId() {
-        return this.orderId;
-    }
-
-    public String getUserId() {
-        return this.userId;
-    }
-
-    public Date getOrderDate() {
-        return this.orderDate;
-    }
-
-    public double getTotalAmount() {
-        return this.totalAmount;
-    }
-
-    public String getOrderStatus() {
-        return this.orderStatus;
-    }
 }
